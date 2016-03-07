@@ -188,7 +188,7 @@ void kprintf_bootstrap(void);
 /*
  * Other miscellaneous stuff
  */
-
+void hello(void); //added for lab 3
 #define DIVROUNDUP(a,b) (((a)+(b)-1)/(b))
 #define ROUNDUP(a,b)    (DIVROUNDUP(a,b)*b)
 

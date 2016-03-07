@@ -100,9 +100,8 @@ boot(void)
 	kprintf("OS/161 base system version %s\n", BASE_VERSION);
 	kprintf("%s", harvard_copyright);
 	kprintf("\n");
-
-	kprintf("Put-your-group-name-here's system version %s (%s #%d)\n", 
-		GROUP_VERSION, buildconfig, buildversion);
+	kprintf("\n");
+	//kprintf("Alex's  system version %s (%s #%d)\n", GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
 
 	/* Early initialization. */
@@ -120,7 +119,7 @@ boot(void)
 	/* Now do pseudo-devices. */
 	pseudoconfig();
 	kprintf("\n");
-
+	hello(); //added
 	/* Late phase of initialization. */
 	vm_bootstrap();
 	kprintf_bootstrap();

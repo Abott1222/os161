@@ -155,7 +155,7 @@ common_prog(int nargs, char **args)
 #ifdef UW
 	/* wait until the process we have just launched - and any others that it 
 	   may fork - is finished before proceeding */
-	P(no_proc_sem);
+	// P(no_proc_sem);  //changed for lab5
 #endif // UW
 
 	return 0;
@@ -456,9 +456,14 @@ static const char *testmenu[] = {
 	"[bt]  Bitmap test                   ",
 	"[km1] Kernel malloc test            ",
 	"[km2] kmalloc stress test           ",
+	"[ft]  first test                    ", //added
 	"[tt1] Thread test 1                 ",
 	"[tt2] Thread test 2                 ",
 	"[tt3] Thread test 3                 ",
+	"[mtt] My Thread test                ", //added for thread test
+	"[mut] My Unsafe Thread test         ", //added for Unsafe thread test
+	"[mst] My Safe Thread test         ", //added for safe thread test
+	"[sst] My Safe spinlock test         ",
 #if OPT_NET
 	"[net] Network test                  ",
 #endif
@@ -565,12 +570,17 @@ static struct {
 	{ "bt",		bitmaptest },
 	{ "km1",	malloctest },
 	{ "km2",	mallocstress },
+	{ "ft" ,        firstTest},    //added
 #if OPT_NET
 	{ "net",	nettest },
 #endif
 	{ "tt1",	threadtest },
 	{ "tt2",	threadtest2 },
 	{ "tt3",	threadtest3 },
+	{ "mtt",        myThreadTest },  //added for thread test
+	{ "mut",        myUnsafeThreadTest },  //added for thread test
+	{ "mst",        SafeThreadTest },  //added for thread test
+	{ "sst",        SafeSpinlockThreadTest },
 	{ "sy1",	semtest },
 
 	/* synchronization assignment tests */

@@ -385,7 +385,7 @@ file      syscall/file_syscalls.c
 
 file      startup/main.c
 file      startup/menu.c
-
+file	  startup/hello.c
 ########################################
 #                                      #
 #             Filesystems              #
@@ -434,10 +434,15 @@ optfile   synchprobs  synchprobs/catmouse_synch.c
 file		test/arraytest.c
 file		test/bitmaptest.c
 file		test/threadtest.c
+file            test/threadfun.c
+file            test/unsafethreadcounter.c
+file            test/safethreadcounter.c
+file            test/safethreadspinlock.c
 file		test/tt3.c
 file		test/synchtest.c
 file		test/malloctest.c
 file		test/fstest.c
+file            test/firstTest.c
 optfile net	test/nettest.c
 # UW Mod
 file    test/uw-tests.c

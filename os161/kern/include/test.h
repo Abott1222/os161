@@ -51,11 +51,15 @@ int catmouse(int, char **);
 int arraytest(int, char **);
 int bitmaptest(int, char **);
 int queuetest(int, char **);
-
+int firstTest(int, char**); //mytest
 /* thread tests */
 int threadtest(int, char **);
 int threadtest2(int, char **);
 int threadtest3(int, char **);
+int myThreadTest(int, char **); //my thread test
+int myUnsafeThreadTest(int, char **); //bad counter protection test
+int SafeThreadTest(int, char **); //decent counter protection test
+int SafeSpinlockThreadTest(int, char **); //better counter protection test
 int semtest(int, char **);
 int locktest(int, char **);
 int cvtest(int, char **);

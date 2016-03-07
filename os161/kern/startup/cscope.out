@@ -1,0 +1,2000 @@
+cscope 15 $HOME/os161/kern/startup               0000010483
+	@hello.c
+
+1 
+	~<ty≥s.h
+>
+
+2 
+	~<lib.h
+>
+
+3 
+	~<ã°.h
+>
+
+6 
+	$hñlo
+()
+
+8 
+	`k¥ötf
+("Hello World\n");
+
+9 
+	}
+}
+
+	@main.c
+
+34 
+	~<ty≥s.h
+>
+
+35 
+	~<kîn/î∫o.h
+>
+
+36 
+	~<kîn/ªboŸ.h
+>
+
+37 
+	~<kîn/uni°d.h
+>
+
+38 
+	~<lib.h
+>
+
+39 
+	~<•l.h
+>
+
+40 
+	~<˛ock.h
+>
+
+41 
+	~<thªad.h
+>
+
+42 
+	~<¥oc.h
+>
+
+43 
+	~<cuºít.h
+>
+
+44 
+	~<synch.h
+>
+
+45 
+	~<vm.h
+>
+
+46 
+	~<maöbus.h
+>
+
+47 
+	~<vfs.h
+>
+
+48 
+	~<devi˚.h
+>
+
+49 
+	~<sysˇŒ.h
+>
+
+50 
+	~<ã°.h
+>
+
+51 
+	~<vîsi⁄.h
+>
+
+52 
+	~"autoc⁄f.h
+"
+
+64 c⁄° 
+buûdvîsi⁄
+;
+
+65 c⁄° 
+buûdc⁄fig
+[];
+
+70 c⁄° 
+	gh¨v¨d_c›yright
+[] =
+
+80 
+	$boŸ
+()
+
+99 
+	`k¥ötf
+("\n");
+
+100 
+	`k¥ötf
+("OS/161 ba£ sy°em vîsi⁄ %s\n", 
+BASE_VERSION
+);
+
+101 
+	`k¥ötf
+("%s", 
+h¨v¨d_c›yright
+);
+
+102 
+	`k¥ötf
+("\n");
+
+103 
+	`k¥ötf
+("\n");
+
+105 
+	`k¥ötf
+("\n");
+
+108 
+	`øm_boŸ°øp
+();
+
+109 
+	`¥oc_boŸ°øp
+();
+
+110 
+	`thªad_boŸ°øp
+();
+
+111 
+	`h¨d˛ock_boŸ°øp
+();
+
+112 
+	`vfs_boŸ°øp
+();
+
+115 
+	`k¥ötf
+("DeviceÖrobe...\n");
+
+116 
+	`KASSERT
+(
+cuπhªad
+->
+t_cur•l
+ > 0);
+
+117 
+	`maöbus_boŸ°øp
+();
+
+118 
+	`KASSERT
+(
+cuπhªad
+->
+t_cur•l
+ == 0);
+
+120 
+	`p£udoc⁄fig
+();
+
+121 
+	`k¥ötf
+("\n");
+
+122 
+	`hñlo
+();
+
+124 
+	`vm_boŸ°øp
+();
+
+125 
+	`k¥ötf_boŸ°øp
+();
+
+126 
+	`thªad_°¨t_˝us
+();
+
+129 
+	`vfs_£tboŸfs
+("emu0");
+
+135 
+	`COMPILE_ASSERT
+((
+u£Ωå_t
+) == (*));
+
+136 
+	`COMPILE_ASSERT
+((*(
+u£Ωå_t
+)0) == ());
+
+137 
+	}
+}
+
+144 
+	$shutdown
+()
+
+147 
+	`k¥ötf
+("Shutting down.\n");
+
+149 
+	`vfs_˛órboŸfs
+();
+
+150 
+	`vfs_˛órcurdú
+();
+
+151 
+	`vfs_unmou¡Æl
+();
+
+153 
+	`thªad_shutdown
+();
+
+155 
+	`•lhigh
+();
+
+156 
+	}
+}
+
+168 
+	$sys_ªboŸ
+(
+code
+)
+
+170 
+code
+) {
+
+171 
+RB_REBOOT
+:
+
+172 
+RB_HALT
+:
+
+173 
+RB_POWEROFF
+:
+
+176  
+EINVAL
+;
+
+179 
+	`shutdown
+();
+
+181 
+code
+) {
+
+182 
+RB_HALT
+:
+
+183 
+	`k¥ötf
+("The system is halted.\n");
+
+184 
+	`maöbus_hÆt
+();
+
+186 
+RB_REBOOT
+:
+
+187 
+	`k¥ötf
+("Rebooting...\n");
+
+188 
+	`maöbus_ªboŸ
+();
+
+190 
+RB_POWEROFF
+:
+
+191 
+	`k¥ötf
+("The system is halted.\n");
+
+192 
+	`maöbus_powîoff
+();
+
+196 
+	`∑nic
+("reboot operation failed\n");
+
+198 
+	}
+}
+
+205 
+	$kmaö
+(*
+¨gumíts
+)
+
+207 
+	`boŸ
+();
+
+209 
+	`míu
+(
+¨gumíts
+);
+
+212 
+	}
+}
+
+	@menu.c
+
+30 
+	~<ty≥s.h
+>
+
+31 
+	~<kîn/î∫o.h
+>
+
+32 
+	~<kîn/ªboŸ.h
+>
+
+33 
+	~<kîn/uni°d.h
+>
+
+34 
+	~<limôs.h
+>
+
+35 
+	~<lib.h
+>
+
+36 
+	~<uio.h
+>
+
+37 
+	~<˛ock.h
+>
+
+38 
+	~<thªad.h
+>
+
+39 
+	~<¥oc.h
+>
+
+40 
+	~<synch.h
+>
+
+41 
+	~<vfs.h
+>
+
+42 
+	~<sfs.h
+>
+
+43 
+	~<sysˇŒ.h
+>
+
+44 
+	~<ã°.h
+>
+
+45 
+	~"›t-synch¥obs.h
+"
+
+46 
+	~"›t-sfs.h
+"
+
+47 
+	~"›t-√t.h
+"
+
+53 
+	#_PATH_SHELL
+ "/bö/sh"
+
+	)
+
+55 
+	#MAXMENUARGS
+ 16
+
+	)
+
+59 
+	$gëöãrvÆ
+(
+time_t
+ 
+s1
+, 
+uöt32_t
+ 
+ns1
+,Åime_à
+s2
+, uöt32_à
+ns2
+,
+
+60 
+time_t
+ *
+rs
+, 
+uöt32_t
+ *
+∫s
+)
+
+62 i‡(
+ns2
+ < 
+ns1
+) {
+
+63 
+ns2
+ += 1000000000;
+
+64 
+s2
+--;
+
+67 *
+∫s
+ = 
+ns2
+ - 
+ns1
+;
+
+68 *
+rs
+ = 
+s2
+ - 
+s1
+;
+
+69 
+	}
+}
+
+88 
+	$cmd_¥ogthªad
+(*
+±r
+, 
+«rgs
+)
+
+90 **
+¨gs
+ = 
+±r
+;
+
+91 
+¥og«me
+[128];
+
+92 
+ªsu…
+;
+
+94 
+	`KASSERT
+(
+«rgs
+ >= 1);
+
+96 i‡(
+«rgs
+ > 2) {
+
+97 
+	`k¥ötf
+("Warning:árgumentÖassing from menuÇot supported\n");
+
+101 
+	`KASSERT
+(
+	`°æí
+(
+¨gs
+[0]Ë< (
+¥og«me
+));
+
+103 
+	`°r˝y
+(
+¥og«me
+, 
+¨gs
+[0]);
+
+105 
+ªsu…
+ = 
+	`ru≈rogøm
+(
+¥og«me
+);
+
+106 i‡(
+ªsu…
+) {
+
+107 
+	`k¥ötf
+("Ru¬ögÖrogøm %†Áûed: %s\n", 
+¨gs
+[0],
+
+108 
+	`°ªº‹
+(
+ªsu…
+));
+
+113 
+	}
+}
+
+129 
+	$comm⁄_¥og
+(
+«rgs
+, **
+¨gs
+)
+
+131 
+¥oc
+ *proc;
+
+132 
+ªsu…
+;
+
+134 #i‡
+OPT_SYNCHPROBS
+
+
+135 
+	`k¥ötf
+("Warning:ÅhisÖrobably won't work withá "
+
+140 
+¥oc
+ = 
+	`¥oc_¸óã_ru≈rogøm
+(
+¨gs
+[0] );
+
+141 i‡(
+¥oc
+ =
+NULL
+) {
+
+142  
+ENOMEM
+;
+
+145 
+ªsu…
+ = 
+	`thªad_f‹k
+(
+¨gs
+[0] ,
+
+146 
+¥oc
+ ,
+
+147 
+cmd_¥ogthªad
+ ,
+
+148 
+¨gs
+ , 
+«rgs
+ );
+
+149 i‡(
+ªsu…
+) {
+
+150 
+	`k¥ötf
+("thªad_f‹k faûed: %s\n", 
+	`°ªº‹
+(
+ªsu…
+));
+
+151 
+	`¥oc_de°roy
+(
+¥oc
+);
+
+152  
+ªsu…
+;
+
+155 #ifde‡
+UW
+
+
+158 
+	`P
+(
+no_¥oc_£m
+);
+
+162 
+	}
+}
+
+169 
+	$cmd_¥og
+(
+«rgs
+, **
+¨gs
+)
+
+171 i‡(
+«rgs
+ < 2) {
+
+172 
+	`k¥ötf
+("Usage:ÖÖrogram [arguments]\n");
+
+173  
+EINVAL
+;
+
+177 
+¨gs
+++;
+
+178 
+«rgs
+--;
+
+180  
+	`comm⁄_¥og
+(
+«rgs
+, 
+¨gs
+);
+
+181 
+	}
+}
+
+188 
+	$cmd_shñl
+(
+«rgs
+, **
+¨gs
+)
+
+190 ()
+¨gs
+;
+
+191 i‡(
+«rgs
+ != 1) {
+
+192 
+	`k¥ötf
+("Usage: s\n");
+
+193  
+EINVAL
+;
+
+196 
+¨gs
+[0] = (*)
+_PATH_SHELL
+;
+
+198  
+	`comm⁄_¥og
+(
+«rgs
+, 
+¨gs
+);
+
+199 
+	}
+}
+
+206 
+	$cmd_chdú
+(
+«rgs
+, **
+¨gs
+)
+
+208 i‡(
+«rgs
+ != 2) {
+
+209 
+	`k¥ötf
+("Usage: cd directory\n");
+
+210  
+EINVAL
+;
+
+213  
+	`vfs_chdú
+(
+¨gs
+[1]);
+
+214 
+	}
+}
+
+221 
+	$cmd_pwd
+(
+«rgs
+, **
+¨gs
+)
+
+223 
+buf
+[
+PATH_MAX
++1];
+
+224 
+ªsu…
+;
+
+225 
+iovec
+ 
+iov
+;
+
+226 
+uio
+ 
+ku
+;
+
+228 ()
+«rgs
+;
+
+229 ()
+¨gs
+;
+
+231 
+	`uio_köô
+(&
+iov
+, &
+ku
+, 
+buf
+, (buf)-1, 0, 
+UIO_READ
+);
+
+232 
+ªsu…
+ = 
+	`vfs_gëcwd
+(&
+ku
+);
+
+233 i‡(
+ªsu…
+) {
+
+234 
+	`k¥ötf
+("vfs_gëcwd faûed (%s)\n", 
+	`°ªº‹
+(
+ªsu…
+));
+
+235  
+ªsu…
+;
+
+239 
+buf
+[(buf)-1-
+ku
+.
+uio_ªsid
+] = 0;
+
+242 
+	`k¥ötf
+("%s\n", 
+buf
+);
+
+245 
+	}
+}
+
+252 
+	$cmd_sync
+(
+«rgs
+, **
+¨gs
+)
+
+254 ()
+«rgs
+;
+
+255 ()
+¨gs
+;
+
+257 
+	`vfs_sync
+();
+
+260 
+	}
+}
+
+267 
+	$cmd_∑nic
+(
+«rgs
+, **
+¨gs
+)
+
+269 ()
+«rgs
+;
+
+270 ()
+¨gs
+;
+
+272 
+	`∑nic
+("UserÑequestedÖanic\n");
+
+274 
+	}
+}
+
+281 
+	$cmd_quô
+(
+«rgs
+, **
+¨gs
+)
+
+283 ()
+«rgs
+;
+
+284 ()
+¨gs
+;
+
+286 
+	`vfs_sync
+();
+
+287 
+	`sys_ªboŸ
+(
+RB_POWEROFF
+);
+
+288 
+	`thªad_exô
+();
+
+290 
+	}
+}
+
+298 c⁄° *
+	m«me
+;
+
+299 (*
+	mfunc
+)(c⁄° *
+	mdevi˚
+);
+
+300 } 
+	gmou¡èbÀ
+[] = {
+
+301 #i‡
+OPT_SFS
+
+
+302 { "sfs", 
+sfs_mou¡
+ },
+
+304 { 
+NULL
+, NULL }
+
+309 
+	$cmd_mou¡
+(
+«rgs
+, **
+¨gs
+)
+
+311 *
+f°y≥
+;
+
+312 *
+devi˚
+;
+
+313 
+i
+;
+
+315 i‡(
+«rgs
+ != 3) {
+
+316 
+	`k¥ötf
+("Usage: mount fstype device:\n");
+
+317  
+EINVAL
+;
+
+320 
+f°y≥
+ = 
+¨gs
+[1];
+
+321 
+devi˚
+ = 
+¨gs
+[2];
+
+324 i‡(
+devi˚
+[
+	`°æí
+(device)-1]==':') {
+
+325 
+devi˚
+[
+	`°æí
+(device)-1] = 0;
+
+328 
+i
+=0; 
+mou¡èbÀ
+[i].
+«me
+; i++) {
+
+329 i‡(!
+	`°rcmp
+(
+mou¡èbÀ
+[
+i
+].
+«me
+, 
+f°y≥
+)) {
+
+330  
+mou¡èbÀ
+[
+i
+].
+	`func
+(
+devi˚
+);
+
+333 
+	`k¥ötf
+("Unknow¿fûesy°emÅy≥ %s\n", 
+f°y≥
+);
+
+334  
+EINVAL
+;
+
+335 
+	}
+}
+
+339 
+	$cmd_unmou¡
+(
+«rgs
+, **
+¨gs
+)
+
+341 *
+devi˚
+;
+
+343 i‡(
+«rgs
+ != 2) {
+
+344 
+	`k¥ötf
+("Usage: unmount device:\n");
+
+345  
+EINVAL
+;
+
+348 
+devi˚
+ = 
+¨gs
+[1];
+
+351 i‡(
+devi˚
+[
+	`°æí
+(device)-1]==':') {
+
+352 
+devi˚
+[
+	`°æí
+(device)-1] = 0;
+
+355  
+	`vfs_unmou¡
+(
+devi˚
+);
+
+356 
+	}
+}
+
+368 
+	$cmd_boŸfs
+(
+«rgs
+, **
+¨gs
+)
+
+370 *
+devi˚
+;
+
+372 i‡(
+«rgs
+ != 2) {
+
+373 
+	`k¥ötf
+("Usage: bootfs device\n");
+
+374  
+EINVAL
+;
+
+377 
+devi˚
+ = 
+¨gs
+[1];
+
+380 i‡(
+devi˚
+[
+	`°æí
+(device)-1]==':') {
+
+381 
+devi˚
+[
+	`°æí
+(device)-1] = 0;
+
+384  
+	`vfs_£tboŸfs
+(
+devi˚
+);
+
+385 
+	}
+}
+
+389 
+	$cmd_khóp°©s
+(
+«rgs
+, **
+¨gs
+)
+
+391 ()
+«rgs
+;
+
+392 ()
+¨gs
+;
+
+394 
+	`khóp_¥öt°©s
+();
+
+397 
+	}
+}
+
+405 
+	$showmíu
+(c⁄° *
+«me
+, c⁄° *
+x
+[])
+
+407 
+˘
+, 
+hÆf
+, 
+i
+;
+
+409 
+	`k¥ötf
+("\n");
+
+410 
+	`k¥ötf
+("%s\n", 
+«me
+);
+
+412 
+i
+=
+˘
+=0; 
+x
+[i]; i++) {
+
+413 
+˘
+++;
+
+415 
+hÆf
+ = (
+˘
++1)/2;
+
+417 
+i
+=0; i<
+hÆf
+; i++) {
+
+418 
+	`k¥ötf
+(" %-36s", 
+x
+[
+i
+]);
+
+419 i‡(
+i
++
+hÆf
+ < 
+˘
+) {
+
+420 
+	`k¥ötf
+("%s", 
+x
+[
+i
++
+hÆf
+]);
+
+422 
+	`k¥ötf
+("\n");
+
+425 
+	`k¥ötf
+("\n");
+
+426 
+	}
+}
+
+428 c⁄° *
+	g›smíu
+[] = {
+
+440 
+NULL
+
+
+445 
+	$cmd_›smíu
+(
+n
+, **
+a
+)
+
+447 ()
+n
+;
+
+448 ()
+a
+;
+
+450 
+	`showmíu
+("OS/161 o≥øti⁄†míu", 
+›smíu
+);
+
+452 
+	}
+}
+
+454 c⁄° *
+	gã°míu
+[] = {
+
+464 #i‡
+OPT_NET
+
+
+470 #ifde‡
+UW
+
+
+479 
+NULL
+
+
+484 
+	$cmd_ã°míu
+(
+n
+, **
+a
+)
+
+486 ()
+n
+;
+
+487 ()
+a
+;
+
+489 
+	`showmíu
+("OS/161Åe°†míu", 
+ã°míu
+);
+
+490 
+	`k¥ötf
+(" (1) TheseÅests will fail until you finishÅhe "
+
+492 
+	`k¥ötf
+(" (4) TheseÅests may fail until you finishÅhe "
+
+494 
+	`k¥ötf
+("\n");
+
+497 
+	}
+}
+
+499 c⁄° *
+	gmaömíu
+[] = {
+
+502 #i‡
+OPT_SYNCHPROBS
+
+
+504 #ifde‡
+UW
+
+
+510 
+NULL
+
+
+515 
+	$cmd_maömíu
+(
+n
+, **
+a
+)
+
+517 ()
+n
+;
+
+518 ()
+a
+;
+
+520 
+	`showmíu
+("OS/161 kî√»míu", 
+maömíu
+);
+
+522 
+	}
+}
+
+529 c⁄° *
+	m«me
+;
+
+530 (*
+	mfunc
+)(
+	m«rgs
+, **
+	m¨gs
+);
+
+531 } 
+	gcmdèbÀ
+[] = {
+
+533 { "?", 
+cmd_maömíu
+ },
+
+534 { "h", 
+cmd_maömíu
+ },
+
+535 { "hñp", 
+cmd_maömíu
+ },
+
+536 { "?o", 
+cmd_›smíu
+ },
+
+537 { "?t", 
+cmd_ã°míu
+ },
+
+540 { "s", 
+cmd_shñl
+ },
+
+541 { "p", 
+cmd_¥og
+ },
+
+542 { "mou¡", 
+cmd_mou¡
+ },
+
+543 { "unmou¡", 
+cmd_unmou¡
+ },
+
+544 { "boŸfs", 
+cmd_boŸfs
+ },
+
+545 { "pf", 
+¥ötfûe
+ },
+
+546 { "cd", 
+cmd_chdú
+ },
+
+547 { "pwd", 
+cmd_pwd
+ },
+
+548 { "sync", 
+cmd_sync
+ },
+
+549 { "∑nic", 
+cmd_∑nic
+ },
+
+550 { "q", 
+cmd_quô
+ },
+
+551 { "exô", 
+cmd_quô
+ },
+
+552 { "hÆt", 
+cmd_quô
+ },
+
+554 #i‡
+OPT_SYNCHPROBS
+
+
+556 { "•1", 
+whÆem©ög
+ },
+
+557 #ifde‡
+UW
+
+
+558 { "•2", 
+ˇtmou£
+ },
+
+563 { "kh", 
+cmd_khóp°©s
+ },
+
+566 { "©", 
+¨øyã°
+ },
+
+567 { "bt", 
+bôm≠ã°
+ },
+
+568 { "km1", 
+mÆlo˘e°
+ },
+
+569 { "km2", 
+mÆloc°ªss
+ },
+
+570 { "·" , 
+fú°Te°
+},
+
+571 #i‡
+OPT_NET
+
+
+572 { "√t", 
+√âe°
+ },
+
+574 { "â1", 
+thªadã°
+ },
+
+575 { "â2", 
+thªadã°2
+ },
+
+576 { "â3", 
+thªadã°3
+ },
+
+577 { "mâ", 
+myThªadTe°
+ },
+
+578 { "sy1", 
+£mã°
+ },
+
+581 { "sy2", 
+lockã°
+ },
+
+582 { "sy3", 
+cvã°
+ },
+
+583 #ifde‡
+UW
+
+
+584 { "uw1", 
+uwlockã°1
+ },
+
+585 { "uw2", 
+uwvm°©°e°
+ },
+
+589 { "fs1", 
+f°e°
+ },
+
+590 { "fs2", 
+ªad°ªss
+ },
+
+591 { "fs3", 
+wrôe°ªss
+ },
+
+592 { "fs4", 
+wrôe°ªss2
+ },
+
+593 { "fs5", 
+¸óã°ªss
+ },
+
+595 { 
+NULL
+, NULL }
+
+603 
+	$cmd_di•©ch
+(*
+cmd
+)
+
+605 
+time_t
+ 
+bef‹e£cs
+, 
+a·î£cs
+, 
+£cs
+;
+
+606 
+uöt32_t
+ 
+bef‹í£cs
+, 
+a·în£cs
+, 
+n£cs
+;
+
+607 *
+¨gs
+[
+MAXMENUARGS
+];
+
+608 
+«rgs
+=0;
+
+609 *
+w‹d
+;
+
+610 *
+c⁄ãxt
+;
+
+611 
+i
+, 
+ªsu…
+;
+
+613 
+w‹d
+ = 
+	`°πok_r
+(
+cmd
+, " \t", &
+c⁄ãxt
+);
+
+614 
+w‹d
+ !
+NULL
+;
+
+615 
+w‹d
+ = 
+	`°πok_r
+(
+NULL
+, " \t", &
+c⁄ãxt
+)) {
+
+617 i‡(
+«rgs
+ >
+MAXMENUARGS
+) {
+
+618 
+	`k¥ötf
+("CommandÜine hasÅoo many words\n");
+
+619  
+E2BIG
+;
+
+621 
+¨gs
+[
+«rgs
+++] = 
+w‹d
+;
+
+624 i‡(
+«rgs
+==0) {
+
+628 
+i
+=0; 
+cmdèbÀ
+[i].
+«me
+; i++) {
+
+629 i‡(*
+cmdèbÀ
+[
+i
+].
+«me
+ && !
+	`°rcmp
+(
+¨gs
+[0], cmdtable[i].name)) {
+
+630 
+	`KASSERT
+(
+cmdèbÀ
+[
+i
+].
+func
+!=
+NULL
+);
+
+632 
+	`gëtime
+(&
+bef‹e£cs
+, &
+bef‹í£cs
+);
+
+634 
+ªsu…
+ = 
+cmdèbÀ
+[
+i
+].
+	`func
+(
+«rgs
+, 
+¨gs
+);
+
+636 
+	`gëtime
+(&
+a·î£cs
+, &
+a·în£cs
+);
+
+637 
+	`gëöãrvÆ
+(
+bef‹e£cs
+, 
+bef‹í£cs
+,
+
+638 
+a·î£cs
+, 
+a·în£cs
+,
+
+639 &
+£cs
+, &
+n£cs
+);
+
+641 
+	`k¥ötf
+("OperationÅook %lu.%09lu seconds\n",
+
+642 (Ë
+£cs
+,
+
+643 (Ë
+n£cs
+);
+
+645  
+ªsu…
+;
+
+649 
+	`k¥ötf
+("%s: Comm™dÇŸ found\n", 
+¨gs
+[0]);
+
+650  
+EINVAL
+;
+
+651 
+	}
+}
+
+662 
+	$míu_execuã
+(*
+löe
+, 
+ißrgs
+)
+
+664 *
+comm™d
+;
+
+665 *
+c⁄ãxt
+;
+
+666 
+ªsu…
+;
+
+668 
+comm™d
+ = 
+	`°πok_r
+(
+löe
+, ";", &
+c⁄ãxt
+);
+
+669 
+comm™d
+ !
+NULL
+;
+
+670 
+comm™d
+ = 
+	`°πok_r
+(
+NULL
+, ";", &
+c⁄ãxt
+)) {
+
+672 i‡(
+ißrgs
+) {
+
+673 
+	`k¥ötf
+("OS/161 kî√l: %s\n", 
+comm™d
+);
+
+676 
+ªsu…
+ = 
+	`cmd_di•©ch
+(
+comm™d
+);
+
+677 i‡(
+ªsu…
+) {
+
+678 
+	`k¥ötf
+("Míu comm™d faûed: %s\n", 
+	`°ªº‹
+(
+ªsu…
+));
+
+679 i‡(
+ißrgs
+) {
+
+680 
+	`∑nic
+("FailureÖrocessing kernelárguments\n");
+
+684 
+	}
+}
+
+704 
+	$míu
+(*
+¨gs
+)
+
+706 
+buf
+[64];
+
+708 
+	`míu_execuã
+(
+¨gs
+, 1);
+
+711 
+	`k¥ötf
+("OS/161 kernel [? for menu]: ");
+
+712 
+	`kgës
+(
+buf
+, (buf));
+
+713 
+	`míu_execuã
+(
+buf
+, 0);
+
+715 
+	}
+}
+
+	@
+1
+.
+0
+3
+22
+hello.c
+main.c
+menu.c
